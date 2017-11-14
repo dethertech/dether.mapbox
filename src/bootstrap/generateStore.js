@@ -9,6 +9,7 @@ const enhancer = () => compose(
 );
 
 const initialState = {
+  tellers: [],
 };
 
 export default mode => createStore(
