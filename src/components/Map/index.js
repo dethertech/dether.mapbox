@@ -39,13 +39,12 @@ class Map extends Component {
       <Marker
         key={teller.id}
         position={this.getTellerPosition(teller)}
-        onClick={() => this.selectTeller(teller)}
         className="Marker-teller"
       />
     ))
   )
 
-  render() {
+  render = () => {
     const style = {
       position: 'absolute',
       top: 0,

@@ -6,6 +6,8 @@ import config from './config';
 import registerServiceWorker from './registerServiceWorker';
 import Router from './router';
 
+import '../styles/index.css';
+
 /**
  * Init app
  */

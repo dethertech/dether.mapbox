@@ -15,7 +15,6 @@ const lngLat = PropTypes.oneOfType([
 class Marker extends Component {
   constructor(props, context) {
     super(props);
-    console.log(context);
     if (!context.map) {
       throw new Error('Marker must be put inside a Map');
     }
@@ -37,38 +36,7 @@ class Marker extends Component {
       .addTo(this.context.map);
   }
 
-  componentWillReceiveProps(newProps) {
-    if (newProps.position) {
-      const newPosition = mapboxgl.LngLat.convert(newProps.position);
-      if (this.props.position) {
-        const oldPosition = mapboxgl.LngLat.convert(this.props.position);
-        if (oldPosition.lng !== newPosition.lng ||
-          oldPosition.lat !== newPosition.lat) {
-          this.move(newPosition);
-        }
-      } else {
-        this.move(newPosition);
-      }
-    }
-
-    if (newProps.className !== this.props.className) {
-      this.el.className = newProps.className;
-    }
-  }
-
-  move(position) {
-    this.marker.setLngLat(position);
-  }
-
-  _onClick = () => {
-    if (this.props.onClick) {
-      this.props.onClick();
-    }
-  }
-
-  render() {
-    return null;
-  }
+  render = () => null;
 }
 
 Marker.propTypes = {
@@ -78,7 +46,6 @@ Marker.propTypes = {
     height: PropTypes.number.isRequired,
   }),
   position: lngLat,
-  onClick: PropTypes.func,
 };
 
 Marker.defaultProps = {
@@ -88,7 +55,6 @@ Marker.defaultProps = {
     height: 10,
   },
   position: [0, 0],
-  onClick: () => 0,
 };
 
 Marker.contextTypes = {
