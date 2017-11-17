@@ -57,10 +57,8 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.state.addressByPosition);
-
     return (
-      <Map />
+      <Map tellers={this.props.tellers} />
     );
   }
 }

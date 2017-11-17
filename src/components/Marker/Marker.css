@@ -1,0 +1,24 @@
+.Marker-teller {
+  background: url(/img/Marker/marker_teller.svg);
+  background-size: cover;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: -7px;
+  left: -7px; }
+
+.Marker-dether {
+  background: url(/img/Marker/dether_marker.svg);
+  background-size: cover;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+  top: -7px;
+  left: -7px; }
