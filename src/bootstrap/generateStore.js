@@ -8,6 +8,10 @@ const enhancer = () => compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f,
 );
 
+/**
+ * [initialState description]
+ * @type {Object}
+ */
 const initialState = {
   tellers: [],
 };

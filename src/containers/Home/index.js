@@ -3,17 +3,29 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Map from '../../components/Map';
+import MapBox from '../../components/MapBox';
 import actions from '../../actions';
 
+/**
+ * [Home description]
+ * @extends Component
+ */
 class Home extends Component {
-  componentWillMount() {
+  /**
+   * [componentWillMount description]
+   * @return {[type]} [description]
+   */
+  componentWillMount = () => {
     const { tellers } = this.props.actions;
     tellers.getTellers();
   }
 
+  /**
+   * [render description]
+   * @return {[type]} [description]
+   */
   render = () => (
-    <Map tellers={this.props.tellers} />
+    <MapBox tellers={this.props.tellers} />
   );
 }
 

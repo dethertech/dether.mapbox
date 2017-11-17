@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
 import './Marker.css';
 
-
-const lngLat = PropTypes.oneOfType([
-  PropTypes.shape({
-    lat: PropTypes.number,
-    lng: PropTypes.number,
-  }),
-  PropTypes.arrayOf(PropTypes.number),
-]);
-
+/**
+ * [Marker description]
+ * @extends Component
+ */
 class Marker extends Component {
+  /**
+   * [constructor description]
+   * @param  {[type]} props   [description]
+   * @param  {[type]} context [description]
+   * @return {[type]}         [description]
+   */
   constructor(props, context) {
     super(props);
     if (!context.map) {
@@ -20,19 +21,18 @@ class Marker extends Component {
     }
   }
 
-  componentDidMount() {
+  /**
+   * [componentDidMount description]
+   * @return {[type]} [description]
+   */
+  componentDidMount = () => {
     this.el = document.createElement('div');
     this.el.className = this.props.className;
-    this.el.addEventListener('click', this._onClick);
 
     const position = mapboxgl.LngLat.convert(this.props.position);
-    // make a marker for each feature and add to the map
-    this.marker = new mapboxgl.Marker(this.el, {
-      offset: [
-        -this.props.size.width / 2,
-        -this.props.size.height / 2,
-      ],
-    }).setLngLat(position)
+
+    this.marker = new mapboxgl.Marker(this.el)
+      .setLngLat(position)
       .addTo(this.context.map);
   }
 
@@ -41,19 +41,17 @@ class Marker extends Component {
 
 Marker.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.shape({
-    width: PropTypes.number.isRequired,
-    height: PropTypes.number.isRequired,
-  }),
-  position: lngLat,
+  position: PropTypes.oneOfType([
+    PropTypes.shape({
+      lat: PropTypes.number,
+      lng: PropTypes.number,
+    }),
+    PropTypes.arrayOf(PropTypes.number),
+  ]),
 };
 
 Marker.defaultProps = {
   className: 'Marker-default',
-  size: {
-    width: 10,
-    height: 10,
-  },
   position: [0, 0],
 };
 
