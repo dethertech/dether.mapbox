@@ -9,7 +9,7 @@ const enhancer = () => compose(
 );
 
 /**
- * [initialState description]
+ * instantiate store
  * @type {Object}
  */
 const initialState = {

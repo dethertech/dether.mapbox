@@ -6,7 +6,7 @@ import Marker from '../Marker';
 import './MapBox.css';
 
 /**
- * [MapBox description]
+ * Map component
  * @extends Component
  */
 class MapBox extends Component {
@@ -14,15 +14,11 @@ class MapBox extends Component {
     ready: false,
   }
 
-  /**
-   * [getChildContext description]
-   * @return {[type]} [description]
-   */
   getChildContext = () => ({ map: this.map });
 
   /**
-   * [componentDidMount description]
-   * @return {[type]} [description]
+   * generate map
+   * @return {} return map
    */
   componentDidMount = () => {
     MapboxGl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
@@ -38,15 +34,14 @@ class MapBox extends Component {
   }
 
   /**
-   * [componentWillUnmount description]
-   * @return {[type]} [description]
+   * Remove map
    */
   componentWillUnmount = () => this.map.remove();
 
   /**
-   * [getTellerPosition description]
-   * @param  {[type]} teller [description]
-   * @return {[type]}        [description]
+   * Get teller position
+   * @param  {object} teller formated teller
+   * @return {object} formated position
    */
   getTellerPosition = teller => ({
     lat: teller.lat,
@@ -54,9 +49,9 @@ class MapBox extends Component {
   });
 
   /**
-   * [renderMarkers description]
-   * @param  {[type]} data [description]
-   * @return {[type]}      [description]
+   * Marker on the map
+   * @param  {object} data formated teller
+   * @return {component} return marker
    */
   renderMarkers = data => (
     data.map(teller => (
@@ -69,8 +64,8 @@ class MapBox extends Component {
   )
 
   /**
-   * [render description]
-   * @return {[type]} [description]
+   * map with tellers and markers
+   * @return {component} return map and teller
    */
   render = () => (
     <div className="map" ref={(el) => { this.mapContainer = el; }}>

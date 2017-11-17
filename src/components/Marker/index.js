@@ -4,16 +4,10 @@ import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
 import './Marker.css';
 
 /**
- * [Marker description]
+ * Marker component
  * @extends Component
  */
 class Marker extends Component {
-  /**
-   * [constructor description]
-   * @param  {[type]} props   [description]
-   * @param  {[type]} context [description]
-   * @return {[type]}         [description]
-   */
   constructor(props, context) {
     super(props);
     if (!context.map) {
@@ -22,8 +16,7 @@ class Marker extends Component {
   }
 
   /**
-   * [componentDidMount description]
-   * @return {[type]} [description]
+   * Create a new marker form mapbox
    */
   componentDidMount = () => {
     this.el = document.createElement('div');

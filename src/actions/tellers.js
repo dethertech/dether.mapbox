@@ -3,7 +3,7 @@ import DetherJS from 'detherjs';
 export const TELLERS_SET = 'TELLERS_SET';
 
 /**
- * [dether description]
+ * Instanciate a new DetherJS instance
  * @type {DetherJS}
  */
 const dether = new DetherJS({
@@ -11,7 +11,7 @@ const dether = new DetherJS({
 });
 
 /**
- * [set description]
+ * Set all tellers
  * @param {[type]} payload [description]
  */
 export const set = payload => ({
@@ -20,8 +20,8 @@ export const set = payload => ({
 });
 
 /**
- * [getTellers description]
- * @return {[type]} [description]
+ * Get all teller from dether contract
+ * @return {array} all tellers
  */
 export const getTellers = () => dispatch =>
   new Promise(async (res, rej) => {

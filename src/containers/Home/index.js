@@ -7,12 +7,12 @@ import MapBox from '../../components/MapBox';
 import actions from '../../actions';
 
 /**
- * [Home description]
+ * Home component
  * @extends Component
  */
 class Home extends Component {
   /**
-   * [componentWillMount description]
+   * Load all tellers
    * @return {[type]} [description]
    */
   componentWillMount = () => {
@@ -21,8 +21,8 @@ class Home extends Component {
   }
 
   /**
-   * [render description]
-   * @return {[type]} [description]
+   * Home component
+   * @return {component} return home component
    */
   render = () => (
     <MapBox tellers={this.props.tellers} />
