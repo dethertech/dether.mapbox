@@ -1,5 +1,5 @@
 /**
- * [home description]
+ * Route
  * @type {String}
  */
 export default {

@@ -1,10 +1,7 @@
 import { TELLERS_SET } from '../actions/tellers';
 
 /**
- * [description]
- * @param  {Array}  [state=[]] [description]
- * @param  {[type]} action     [description]
- * @return {[type]}            [description]
+ * reducer teller
  */
 export default (state = [], action) => {
   switch (action.type) {
