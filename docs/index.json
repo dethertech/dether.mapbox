@@ -1,0 +1,1031 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/actions/index.js",
+    "content": "import * as tellers from './tellers';\n\nexport default {\n  tellers,\n};\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/actions/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/actions/tellers.js",
+    "content": "import DetherJS from 'detherjs';\n\nexport const TELLERS_SET = 'TELLERS_SET';\n\n/**\n * Instanciate a new DetherJS instance\n * @type {DetherJS}\n */\nconst dether = new DetherJS({\n  network: process.env.REACT_APP_NETWORK,\n});\n\n/**\n * Set all tellers\n * @param {[type]} payload [description]\n */\nexport const set = payload => ({\n  type: TELLERS_SET,\n  payload,\n});\n\n/**\n * Get all teller from dether contract\n * @return {array} all tellers\n */\nexport const getTellers = () => dispatch =>\n  new Promise(async (res, rej) => {\n    try {\n      const allTellers = await dether.getAllTellers();\n      dispatch(set(allTellers));\n      res();\n    } catch (e) {\n      rej(new TypeError(e));\n    }\n  });\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/actions/tellers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "TELLERS_SET",
+    "memberof": "src/actions/tellers.js",
+    "static": true,
+    "longname": "src/actions/tellers.js~TELLERS_SET",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/actions/tellers.js",
+    "importStyle": "{TELLERS_SET}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "dether",
+    "memberof": "src/actions/tellers.js",
+    "static": true,
+    "longname": "src/actions/tellers.js~dether",
+    "access": "public",
+    "export": false,
+    "importPath": "dether.map/src/actions/tellers.js",
+    "importStyle": null,
+    "description": "Instanciate a new DetherJS instance",
+    "lineNumber": 9,
+    "type": {
+      "nullable": null,
+      "types": [
+        "DetherJS"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "set",
+    "memberof": "src/actions/tellers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/tellers.js~set",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/actions/tellers.js",
+    "importStyle": "{set}",
+    "description": "Set all tellers",
+    "lineNumber": 17,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "[type]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "payload",
+        "description": "[description]"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "getTellers",
+    "memberof": "src/actions/tellers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/tellers.js~getTellers",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/actions/tellers.js",
+    "importStyle": "{getTellers}",
+    "description": "Get all teller from dether contract",
+    "lineNumber": 26,
+    "return": {
+      "nullable": null,
+      "types": [
+        "array"
+      ],
+      "spread": false,
+      "description": "all tellers"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/bootstrap/config.js",
+    "content": "/**\n * Config\n * @type {Object}\n */\nconst config = {\n  env: process.env.NODE_ENV,\n  PROD: process.env.NODE_ENV === 'production',\n};\n\nexport default config;\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/bootstrap/config.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "src/bootstrap/config.js",
+    "static": true,
+    "longname": "src/bootstrap/config.js~config",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/bootstrap/config.js",
+    "importStyle": "config",
+    "description": "Config",
+    "lineNumber": 5,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/bootstrap/generateStore.js",
+    "content": "import { createStore, compose, applyMiddleware } from 'redux';\nimport thunk from 'redux-thunk';\n\nimport reducers from '../reducers';\n\nconst enhancer = () => compose(\n  applyMiddleware(thunk),\n  window.devToolsExtension ? window.devToolsExtension() : f => f,\n);\n\n/**\n * instantiate store\n * @type {Object}\n */\nconst initialState = {\n  tellers: [],\n};\n\nexport default mode => createStore(\n  reducers,\n  initialState,\n  enhancer(mode),\n);\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/bootstrap/generateStore.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "enhancer",
+    "memberof": "src/bootstrap/generateStore.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bootstrap/generateStore.js~enhancer",
+    "access": "public",
+    "export": false,
+    "importPath": "dether.map/src/bootstrap/generateStore.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "initialState",
+    "memberof": "src/bootstrap/generateStore.js",
+    "static": true,
+    "longname": "src/bootstrap/generateStore.js~initialState",
+    "access": "public",
+    "export": false,
+    "importPath": "dether.map/src/bootstrap/generateStore.js",
+    "importStyle": null,
+    "description": "instantiate store",
+    "lineNumber": 15,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "generateStore",
+    "memberof": "src/bootstrap/generateStore.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bootstrap/generateStore.js~generateStore",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/bootstrap/generateStore.js",
+    "importStyle": "generateStore",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mode",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/bootstrap/registerServiceWorker.js",
+    "content": "// In production, we register a service worker to serve assets from local cache.\n\n// This lets the app load faster on subsequent visits in production, and gives\n// it offline capabilities. However, it also means that developers (and users)\n// will only see deployed updates on the \"N+1\" visit to a page, since previously\n// cached resources are updated in the background.\n\n// To learn more about the benefits of this model, read https://goo.gl/KwvDNy.\n// This link also includes instructions on opting out of this behavior.\n\nconst isLocalhost = Boolean(\n  window.location.hostname === 'localhost' ||\n    // [::1] is the IPv6 localhost address.\n    window.location.hostname === '[::1]' ||\n    // 127.0.0.1/8 is considered localhost for IPv4.\n    window.location.hostname.match(\n      /^127(?:\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/\n    )\n);\n\nexport default function register() {\n  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {\n    // The URL constructor is available in all browsers that support SW.\n    const publicUrl = new URL(process.env.PUBLIC_URL, window.location);\n    if (publicUrl.origin !== window.location.origin) {\n      // Our service worker won't work if PUBLIC_URL is on a different origin\n      // from what our page is served on. This might happen if a CDN is used to\n      // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374\n      return;\n    }\n\n    window.addEventListener('load', () => {\n      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;\n\n      if (isLocalhost) {\n        // This is running on localhost. Lets check if a service worker still exists or not.\n        checkValidServiceWorker(swUrl);\n      } else {\n        // Is not local host. Just register service worker\n        registerValidSW(swUrl);\n      }\n    });\n  }\n}\n\nfunction registerValidSW(swUrl) {\n  navigator.serviceWorker\n    .register(swUrl)\n    .then(registration => {\n      registration.onupdatefound = () => {\n        const installingWorker = registration.installing;\n        installingWorker.onstatechange = () => {\n          if (installingWorker.state === 'installed') {\n            if (navigator.serviceWorker.controller) {\n              // At this point, the old content will have been purged and\n              // the fresh content will have been added to the cache.\n              // It's the perfect time to display a \"New content is\n              // available; please refresh.\" message in your web app.\n              console.log('New content is available; please refresh.');\n            } else {\n              // At this point, everything has been precached.\n              // It's the perfect time to display a\n              // \"Content is cached for offline use.\" message.\n              console.log('Content is cached for offline use.');\n            }\n          }\n        };\n      };\n    })\n    .catch(error => {\n      console.error('Error during service worker registration:', error);\n    });\n}\n\nfunction checkValidServiceWorker(swUrl) {\n  // Check if the service worker can be found. If it can't reload the page.\n  fetch(swUrl)\n    .then(response => {\n      // Ensure service worker exists, and that we really are getting a JS file.\n      if (\n        response.status === 404 ||\n        response.headers.get('content-type').indexOf('javascript') === -1\n      ) {\n        // No service worker found. Probably a different app. Reload the page.\n        navigator.serviceWorker.ready.then(registration => {\n          registration.unregister().then(() => {\n            window.location.reload();\n          });\n        });\n      } else {\n        // Service worker found. Proceed as normal.\n        registerValidSW(swUrl);\n      }\n    })\n    .catch(() => {\n      console.log(\n        'No internet connection found. App is running in offline mode.'\n      );\n    });\n}\n\nexport function unregister() {\n  if ('serviceWorker' in navigator) {\n    navigator.serviceWorker.ready.then(registration => {\n      registration.unregister();\n    });\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/bootstrap/registerServiceWorker.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "isLocalhost",
+    "memberof": "src/bootstrap/registerServiceWorker.js",
+    "static": true,
+    "longname": "src/bootstrap/registerServiceWorker.js~isLocalhost",
+    "access": "public",
+    "export": false,
+    "importPath": "dether.map/src/bootstrap/registerServiceWorker.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "register",
+    "memberof": "src/bootstrap/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bootstrap/registerServiceWorker.js~register",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/bootstrap/registerServiceWorker.js",
+    "importStyle": "register",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "registerValidSW",
+    "memberof": "src/bootstrap/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bootstrap/registerServiceWorker.js~registerValidSW",
+    "access": "public",
+    "export": false,
+    "importPath": "dether.map/src/bootstrap/registerServiceWorker.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [
+      {
+        "name": "swUrl",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "checkValidServiceWorker",
+    "memberof": "src/bootstrap/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bootstrap/registerServiceWorker.js~checkValidServiceWorker",
+    "access": "public",
+    "export": false,
+    "importPath": "dether.map/src/bootstrap/registerServiceWorker.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 75,
+    "undocument": true,
+    "params": [
+      {
+        "name": "swUrl",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "unregister",
+    "memberof": "src/bootstrap/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bootstrap/registerServiceWorker.js~unregister",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/bootstrap/registerServiceWorker.js",
+    "importStyle": "{unregister}",
+    "description": null,
+    "lineNumber": 102,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/constants/routes.js",
+    "content": "/**\n * Route\n * @type {String}\n */\nexport default {\n  home: '/',\n};\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/constants/routes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/reducers/index.js",
+    "content": "import { combineReducers } from 'redux';\n\nimport tellers from './tellers';\n\n/**\n * Reducers\n * @type {Object}\n */\nconst detherShop = combineReducers({\n  tellers,\n});\n\nexport default detherShop;\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/reducers/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "detherShop",
+    "memberof": "src/reducers/index.js",
+    "static": true,
+    "longname": "src/reducers/index.js~detherShop",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/reducers/index.js",
+    "importStyle": "detherShop",
+    "description": "Reducers",
+    "lineNumber": 9,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/reducers/tellers.js",
+    "content": "import { TELLERS_SET } from '../actions/tellers';\n\n/**\n * reducer teller\n */\nexport default (state = [], action) => {\n  switch (action.type) {\n    case TELLERS_SET:\n      return action.payload;\n    default:\n      return state;\n  }\n};\n",
+    "static": true,
+    "longname": "/Users/ishak/Documents/dether.map/src/reducers/tellers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "tellers",
+    "memberof": "src/reducers/tellers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reducers/tellers.js~tellers",
+    "access": "public",
+    "export": true,
+    "importPath": "dether.map/src/reducers/tellers.js",
+    "importStyle": "tellers",
+    "description": "reducer teller",
+    "lineNumber": 6,
+    "params": [
+      {
+        "name": "state",
+        "optional": true,
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [],
+        "defaultValue": "[]"
+      },
+      {
+        "name": "action",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# Dether Map\n\n[![GitHub issues](https://img.shields.io/github/issues/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/issues)\n[![GitHub stars](https://img.shields.io/github/stars/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/stargazers)\n\n\nDetherMap is Javascript implementation based on [DetherJS](https://github.com/dethertech/dether.js)\n\nIt enables to load all the dether tellers and show them on a Mapbox map\n\nYou can personalise the style on the map by modifying the style of ``REACT_APP_MAPBOX_DESIGN`` in the .env variable.\n\n## Table of Contents\n\n* [Requirement](#requirement)\n* [Install](#install)\n* [Docs](#doc)\n* [Usage](#Usage)\n* [Test](#test)\n* [Build](#build)\n* [Build doc](#build-doc)\n* [Dependencies](#dependencies)\n* [Bugs](#bugs)\n* [Donation](#donation)\n\n## Requirement\n\nYou need a Mapbox API key, you will have to paste it on .env\n```\nREACT_APP_MAPBOX_TOKEN=\nREACT_APP_MAPBOX_DESIGN=mapbox://styles/mapbox/light-v9\nREACT_APP_NETWORK=kovan\n\n```\n\n## Install\n\n```\ngit clone https://github.com/dethertech/dether.map.git\ncd dether.map\nyarn\n```\n\n## Docs\n\nExtensive documentation of all the methods can be found on the [API documentation](https://dethertech.github.io/dether.map)\n\n## Usage\n\n```\nyarn start\n```\n\n## Test\n```\nyarn test\n```\n\n## Build\n```\nyarn build\n```\n\n## Build doc\n```\nyarn run esdoc\nyarn run publish:esdoc\n```\n\n## Dependencies\n\n* [dethercontract](https://github.com/dethertech/dethercontracts.git)\n* [detherjs](https://github.com/dethertech/dether.js)\n* [mapbox-gl](https://github.com/mapbox/mapbox-gl-js)\n* [prop-types](https://github.com/facebook/prop-types)\n* [react](https://github.com/facebook/react)\n* [react-dom](https://github.com/facebook/react)\n* [react-redux](https://github.com/reactjs/react-redux)\n* [react-router-dom](https://github.com/ReactTraining/react-router)\n* [react-scripts](https://github.com/facebookincubator/create-react-app)\n* [redux](https://github.com/reactjs/redux)\n* [redux-thunk](https://github.com/gaearon/redux-thunk)\n\n## Bugs\n\nWhen you find issues, please report them:\n\n* web: [https://github.com/dethertech/dether.map/issues](https://github.com/dethertech/dether.map/issues)\n\n\n## Donation\n* [Ethereum Foundation](https://ethereum.org/donate)\n* [Etherscan](https://etherscan.io/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f)\n* [MyEtherWallet](https://etherscan.io/address/0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8)\n",
+    "longname": "/Users/ishak/Documents/dether.map/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"dether.map\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"detherjs\": \"^0.2.0\",\n    \"mapbox-gl\": \"^0.38.0\",\n    \"prop-types\": \"^15.6.0\",\n    \"react\": \"^16.1.1\",\n    \"react-dom\": \"^16.1.1\",\n    \"react-redux\": \"^5.0.6\",\n    \"react-router-dom\": \"^4.2.2\",\n    \"react-scripts\": \"1.0.17\",\n    \"redux\": \"^3.7.2\",\n    \"redux-thunk\": \"^2.2.0\"\n  },\n  \"scripts\": {\n    \"build-css\": \"node-sass-chokidar src/ -o src/\",\n    \"watch-css\": \"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive\",\n    \"start-js\": \"react-scripts start\",\n    \"start\": \"npm-run-all -p watch-css start-js\",\n    \"build-js\": \"react-scripts build\",\n    \"build\": \"npm-run-all build-css build-js\",\n    \"test\": \"react-scripts test --env=jsdom\",\n    \"eject\": \"react-scripts eject\",\n    \"esdoc\": \"./node_modules/.bin/esdoc\",\n    \"publish:esdoc\": \"gh-pages -d esdoc\"\n  },\n  \"devDependencies\": {\n    \"babel-eslint\": \"^7.2.3\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.11.0\",\n    \"eslint-config-airbnb\": \"^16.1.0\",\n    \"eslint-plugin-flowtype\": \"^2.39.1\",\n    \"eslint-plugin-import\": \"^2.8.0\",\n    \"eslint-plugin-jsx-a11y\": \"^5.1.1\",\n    \"eslint-plugin-react\": \"^7.4.0\",\n    \"gh-pages\": \"^1.0.0\",\n    \"node-sass-chokidar\": \"0.0.3\",\n    \"npm-run-all\": \"^4.1.2\"\n  }\n}\n",
+    "longname": "/Users/ishak/Documents/dether.map/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

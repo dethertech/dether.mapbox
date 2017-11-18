@@ -1,15 +1,18 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
+/lib
+/esdoc
 
 # testing
 /coverage
 
 # production
 /build
+analysis.html
+/config
+src/**/*.css
+src/**/_snapshots_
 
-TODO
 
 # misc
 .DS_Store
@@ -17,7 +20,14 @@ TODO
 .env.development.local
 .env.test.local
 .env.production.local
+.idea
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+truffle/testrpcdb/
+truffle/node_modules/
+
+.nyc_output
+coverage
+TODO
