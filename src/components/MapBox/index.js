@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MapboxGl from 'mapbox-gl/dist/mapbox-gl';
+import MapboxGl from 'mapbox-gl';
 import PropTypes from 'prop-types';
 
 import Marker from '../Marker';
@@ -27,6 +27,10 @@ class MapBox extends Component {
       container: this.mapContainer,
       style: process.env.REACT_APP_MAPBOX_DESIGN,
     });
+
+    this.map.addControl(new MapboxGl.NavigationControl({
+      position: 'top-left',
+    }));
 
     this.map.on('load', () => {
       this.setState({ ready: true });
