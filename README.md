@@ -1,70 +1,54 @@
-# DetherJS
-[![NPM](https://nodei.co/npm/detherjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/detherjs/)
+# Dether Map
 
-[![Build Status](https://travis-ci.com/dethertech/dether.js.svg?token=kdsX9Y3G2xZ5ptCyzuYL&branch=master)](https://travis-ci.com/dethertech/dether.js)
-[![npm version](https://badge.fury.io/js/detherjs.svg)](https://badge.fury.io/js/detherjs)
-[![GitHub issues](https://img.shields.io/github/issues/dethertech/dether.js.svg)](https://github.com/dethertech/dether.js/issues)
-[![GitHub stars](https://img.shields.io/github/stars/dethertech/dether.js.svg)](https://github.com/dethertech/dether.js/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/issues)
+[![GitHub stars](https://img.shields.io/github/stars/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/stargazers)
 
 
 DetherMap is Javascript implementation based on [DetherJS](https://github.com/dethertech/dether.js)
 
 It enables to load all the dether tellers and show them on a Mapbox map
 
-You can personalise the style on the map by modifying the style of REACT_APP_MAPBOX_DESIGN in the .env variable.
-
-## Requirement
-
-You need a Mapbox API key, you will have to paste it on .env
-
+You can personalise the style on the map by modifying the style of ``REACT_APP_MAPBOX_DESIGN`` in the .env variable.
 
 ## Table of Contents
 
+* [Requirement](#requirement)
 * [Install](#install)
 * [Docs](#doc)
-* [Example](#example)
-* [Dev](#dev)
+* [Usage](#Usage)
 * [Test](#test)
-* [Example](#example)
+* [Build](#build)
 * [Build doc](#build-doc)
 * [Dependencies](#dependencies)
 * [Bugs](#bugs)
 * [Donation](#donation)
 
-## Install
+## Requirement
 
-Use NPM to get the package
+You need a Mapbox API key, you will have to paste it on .env
+```
+REACT_APP_MAPBOX_TOKEN=
+REACT_APP_MAPBOX_DESIGN=mapbox://styles/mapbox/light-v9
+REACT_APP_NETWORK=kovan
 
 ```
-npm install --save dether.js
+
+## Install
+
+```
+git clone https://github.com/dethertech/dether.map.git
+cd dether.map
+yarn
 ```
 
 ## Docs
 
-Extensive documentation of all the methods can be found on the [API documentation](https://dethertech.github.io/dether.js)
+Extensive documentation of all the methods can be found on the [API documentation](https://dethertech.github.io/dether.map)
 
 ## Usage
 
-You can find more examples of method usage in [examples/usage.js](https://github.com/dethertech/dether.js/blob/master/examples/usage.js)
-```js
-import DetherJS from 'dether.js';
-
-const dether = new DetherJS({ network: 'kovan' });
-
-const allTellers = await dether.getAllTellers();
-
-const wallet = DetherJS.Ethers.Wallet.createRandom();
-const encryptedWallet = await wallet.encrypt('password');
-
-const user = dether.getUser(encryptedWallet);
-const info = await dether.getInfo();
 ```
-
-## Dev
-```
-git clone https://github.com/dethertech/dether.js.git
-cd dether.js
-yarn
+yarn start
 ```
 
 ## Test
@@ -72,9 +56,9 @@ yarn
 yarn test
 ```
 
-## Example
+## Build
 ```
-yarn run example
+yarn build
 ```
 
 ## Build doc
@@ -86,15 +70,22 @@ yarn run publish:esdoc
 ## Dependencies
 
 * [dethercontract](https://github.com/dethertech/dethercontracts.git)
-* [ethers.js](https://github.com/ethers-io/ethers.js)
-* [babel-polyfill](https://github.com/babel/babel/tree/master/packages/babel-polyfill)
-* [utf8](https://github.com/mathiasbynens/utf8.js)
+* [detherjs](https://github.com/dethertech/dether.js)
+* [mapbox-gl](https://github.com/mapbox/mapbox-gl-js)
+* [prop-types](https://github.com/facebook/prop-types)
+* [react](https://github.com/facebook/react)
+* [react-dom](https://github.com/facebook/react)
+* [react-redux](https://github.com/reactjs/react-redux)
+* [react-router-dom](https://github.com/ReactTraining/react-router)
+* [react-scripts](https://github.com/facebookincubator/create-react-app)
+* [redux](https://github.com/reactjs/redux)
+* [redux-thunk](https://github.com/gaearon/redux-thunk)
 
 ## Bugs
 
 When you find issues, please report them:
 
-* web: [https://github.com/dethertech/dether.js/issues](https://github.com/dethertech/dether.js/issues)
+* web: [https://github.com/dethertech/dether.map/issues](https://github.com/dethertech/dether.map/issues)
 
 
 ## Donation
