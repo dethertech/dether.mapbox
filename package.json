@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "detherjs": "^0.1.0",
-    "mapbox": "^1.0.0-beta9",
+    "detherjs": "^0.2.0",
     "mapbox-gl": "^0.38.0",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
