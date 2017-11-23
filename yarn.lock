@@ -2039,14 +2039,13 @@ dethercontract@^1.2.5:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/dethercontract/-/dethercontract-1.2.6.tgz#eb060bf84ce7134dd1f067bf635b29903ea6f0e0"
 
-detherjs@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/detherjs/-/detherjs-0.2.0.tgz#8aeeb0d1620bf782d6203ddfc039b63540ab35db"
+detherjs@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/detherjs/-/detherjs-0.2.1.tgz#3c89902d6ef5cd7a690077b8050a5e85f8d5902b"
   dependencies:
     babel-polyfill "^6.26.0"
     dethercontract "^1.2.5"
     ethers "^2.1.2"
-    gh-pages "^1.0.0"
     utf8 "^2.1.2"
 
 diff@^3.2.0:
@@ -2407,10 +2406,6 @@ esdoc-brand-plugin@^1.0.0:
 esdoc-coverage-plugin@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/esdoc-coverage-plugin/-/esdoc-coverage-plugin-1.1.0.tgz#3869869cd7f87891f972625787695a299aece45c"
-
-esdoc-ecmascript-proposal-plugin@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/esdoc-ecmascript-proposal-plugin/-/esdoc-ecmascript-proposal-plugin-1.0.0.tgz#390dc5656ba8a2830e39dba3570d79138df2ffd9"
 
 esdoc-external-ecmascript-plugin@^1.0.0:
   version "1.0.0"
