@@ -1,10 +1,10 @@
-# Dether Map
+# Dether MapBox
 
 [![GitHub issues](https://img.shields.io/github/issues/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/issues)
 [![GitHub stars](https://img.shields.io/github/stars/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/stargazers)
 
 
-DetherMap is Javascript implementation based on [DetherJS](https://github.com/dethertech/dether.js)
+DetherMapBox is Javascript implementation based on [DetherJS](https://github.com/dethertech/dether.js)
 
 It enables to load all the dether tellers and show them on a Mapbox map
 
