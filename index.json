@@ -569,7 +569,7 @@
     "name": "src/actions/index.js",
     "content": "import * as tellers from './tellers';\n\nexport default {\n  tellers,\n};\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/actions/index.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/actions/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -580,7 +580,7 @@
     "name": "src/actions/tellers.js",
     "content": "import DetherJS from 'detherjs';\n\nexport const TELLERS_SET = 'TELLERS_SET';\n\n/**\n * Instanciate a new DetherJS instance\n * @type {DetherJS}\n */\nconst dether = new DetherJS({\n  network: process.env.REACT_APP_NETWORK,\n});\n\n/**\n * Set all tellers\n * @param {[type]} payload [description]\n */\nexport const set = payload => ({\n  type: TELLERS_SET,\n  payload,\n});\n\n/**\n * Get all teller from dether contract\n * @return {array} all tellers\n */\nexport const getTellers = () => dispatch =>\n  new Promise(async (res, rej) => {\n    try {\n      const allTellers = await dether.getAllTellers();\n      dispatch(set(allTellers));\n      res();\n    } catch (e) {\n      rej(new TypeError(e));\n    }\n  });\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/actions/tellers.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/actions/tellers.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -688,7 +688,7 @@
     "name": "src/bootstrap/config.js",
     "content": "/**\n * Config\n * @type {Object}\n */\nconst config = {\n  env: process.env.NODE_ENV,\n  PROD: process.env.NODE_ENV === 'production',\n};\n\nexport default config;\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/bootstrap/config.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/bootstrap/config.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -721,7 +721,7 @@
     "name": "src/bootstrap/generateStore.js",
     "content": "import { createStore, compose, applyMiddleware } from 'redux';\nimport thunk from 'redux-thunk';\n\nimport reducers from '../reducers';\n\nconst enhancer = () => compose(\n  applyMiddleware(thunk),\n  window.devToolsExtension ? window.devToolsExtension() : f => f,\n);\n\n/**\n * instantiate store\n * @type {Object}\n */\nconst initialState = {\n  tellers: [],\n};\n\nexport default mode => createStore(\n  reducers,\n  initialState,\n  enhancer(mode),\n);\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/bootstrap/generateStore.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/bootstrap/generateStore.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -801,7 +801,7 @@
     "name": "src/bootstrap/registerServiceWorker.js",
     "content": "// In production, we register a service worker to serve assets from local cache.\n\n// This lets the app load faster on subsequent visits in production, and gives\n// it offline capabilities. However, it also means that developers (and users)\n// will only see deployed updates on the \"N+1\" visit to a page, since previously\n// cached resources are updated in the background.\n\n// To learn more about the benefits of this model, read https://goo.gl/KwvDNy.\n// This link also includes instructions on opting out of this behavior.\n\nconst isLocalhost = Boolean(\n  window.location.hostname === 'localhost' ||\n    // [::1] is the IPv6 localhost address.\n    window.location.hostname === '[::1]' ||\n    // 127.0.0.1/8 is considered localhost for IPv4.\n    window.location.hostname.match(\n      /^127(?:\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/\n    )\n);\n\nexport default function register() {\n  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {\n    // The URL constructor is available in all browsers that support SW.\n    const publicUrl = new URL(process.env.PUBLIC_URL, window.location);\n    if (publicUrl.origin !== window.location.origin) {\n      // Our service worker won't work if PUBLIC_URL is on a different origin\n      // from what our page is served on. This might happen if a CDN is used to\n      // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374\n      return;\n    }\n\n    window.addEventListener('load', () => {\n      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;\n\n      if (isLocalhost) {\n        // This is running on localhost. Lets check if a service worker still exists or not.\n        checkValidServiceWorker(swUrl);\n      } else {\n        // Is not local host. Just register service worker\n        registerValidSW(swUrl);\n      }\n    });\n  }\n}\n\nfunction registerValidSW(swUrl) {\n  navigator.serviceWorker\n    .register(swUrl)\n    .then(registration => {\n      registration.onupdatefound = () => {\n        const installingWorker = registration.installing;\n        installingWorker.onstatechange = () => {\n          if (installingWorker.state === 'installed') {\n            if (navigator.serviceWorker.controller) {\n              // At this point, the old content will have been purged and\n              // the fresh content will have been added to the cache.\n              // It's the perfect time to display a \"New content is\n              // available; please refresh.\" message in your web app.\n              console.log('New content is available; please refresh.');\n            } else {\n              // At this point, everything has been precached.\n              // It's the perfect time to display a\n              // \"Content is cached for offline use.\" message.\n              console.log('Content is cached for offline use.');\n            }\n          }\n        };\n      };\n    })\n    .catch(error => {\n      console.error('Error during service worker registration:', error);\n    });\n}\n\nfunction checkValidServiceWorker(swUrl) {\n  // Check if the service worker can be found. If it can't reload the page.\n  fetch(swUrl)\n    .then(response => {\n      // Ensure service worker exists, and that we really are getting a JS file.\n      if (\n        response.status === 404 ||\n        response.headers.get('content-type').indexOf('javascript') === -1\n      ) {\n        // No service worker found. Probably a different app. Reload the page.\n        navigator.serviceWorker.ready.then(registration => {\n          registration.unregister().then(() => {\n            window.location.reload();\n          });\n        });\n      } else {\n        // Service worker found. Proceed as normal.\n        registerValidSW(swUrl);\n      }\n    })\n    .catch(() => {\n      console.log(\n        'No internet connection found. App is running in offline mode.'\n      );\n    });\n}\n\nexport function unregister() {\n  if ('serviceWorker' in navigator) {\n    navigator.serviceWorker.ready.then(registration => {\n      registration.unregister();\n    });\n  }\n}\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/bootstrap/registerServiceWorker.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/bootstrap/registerServiceWorker.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -925,7 +925,7 @@
     "name": "src/constants/routes.js",
     "content": "/**\n * Route\n * @type {String}\n */\nexport default {\n  home: '/',\n};\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/constants/routes.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/constants/routes.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -936,7 +936,7 @@
     "name": "src/reducers/index.js",
     "content": "import { combineReducers } from 'redux';\n\nimport tellers from './tellers';\n\n/**\n * Reducers\n * @type {Object}\n */\nconst detherShop = combineReducers({\n  tellers,\n});\n\nexport default detherShop;\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/reducers/index.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/reducers/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -969,7 +969,7 @@
     "name": "src/reducers/tellers.js",
     "content": "import { TELLERS_SET } from '../actions/tellers';\n\n/**\n * reducer teller\n */\nexport default (state = [], action) => {\n  switch (action.type) {\n    case TELLERS_SET:\n      return action.payload;\n    default:\n      return state;\n  }\n};\n",
     "static": true,
-    "longname": "/Users/ishak/Documents/dether.map/src/reducers/tellers.js",
+    "longname": "/Users/ishak/Documents/dether.mapbox/src/reducers/tellers.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1014,16 +1014,16 @@
   },
   {
     "kind": "index",
-    "content": "# Dether Map\n\n[![GitHub issues](https://img.shields.io/github/issues/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/issues)\n[![GitHub stars](https://img.shields.io/github/stars/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/stargazers)\n\n\nDetherMap is Javascript implementation based on [DetherJS](https://github.com/dethertech/dether.js)\n\nIt enables to load all the dether tellers and show them on a Mapbox map\n\nYou can personalise the style on the map by modifying the style of ``REACT_APP_MAPBOX_DESIGN`` in the .env variable.\n\n## Table of Contents\n\n* [Requirement](#requirement)\n* [Install](#install)\n* [Docs](#doc)\n* [Usage](#Usage)\n* [Test](#test)\n* [Build](#build)\n* [Build doc](#build-doc)\n* [Dependencies](#dependencies)\n* [Bugs](#bugs)\n* [Donation](#donation)\n\n## Requirement\n\nYou need a Mapbox API key, you will have to paste it on .env\n```\nREACT_APP_MAPBOX_TOKEN=\nREACT_APP_MAPBOX_DESIGN=mapbox://styles/mapbox/light-v9\nREACT_APP_NETWORK=kovan\n\n```\n\n## Install\n\n```\ngit clone https://github.com/dethertech/dether.map.git\ncd dether.map\nyarn\n```\n\n## Docs\n\nExtensive documentation of all the methods can be found on the [API documentation](https://dethertech.github.io/dether.map)\n\n## Usage\n\n```\nyarn start\n```\n\n## Test\n```\nyarn test\n```\n\n## Build\n```\nyarn build\n```\n\n## Build doc\n```\nyarn run esdoc\nyarn run publish:esdoc\n```\n\n## Dependencies\n\n* [dethercontract](https://github.com/dethertech/dethercontracts.git)\n* [detherjs](https://github.com/dethertech/dether.js)\n* [mapbox-gl](https://github.com/mapbox/mapbox-gl-js)\n* [prop-types](https://github.com/facebook/prop-types)\n* [react](https://github.com/facebook/react)\n* [react-dom](https://github.com/facebook/react)\n* [react-redux](https://github.com/reactjs/react-redux)\n* [react-router-dom](https://github.com/ReactTraining/react-router)\n* [react-scripts](https://github.com/facebookincubator/create-react-app)\n* [redux](https://github.com/reactjs/redux)\n* [redux-thunk](https://github.com/gaearon/redux-thunk)\n\n## Bugs\n\nWhen you find issues, please report them:\n\n* web: [https://github.com/dethertech/dether.map/issues](https://github.com/dethertech/dether.map/issues)\n\n\n## Donation\n* [Ethereum Foundation](https://ethereum.org/donate)\n* [Etherscan](https://etherscan.io/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f)\n* [MyEtherWallet](https://etherscan.io/address/0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8)\n",
-    "longname": "/Users/ishak/Documents/dether.map/README.md",
+    "content": "# Dether MapBox\n\n[![GitHub issues](https://img.shields.io/github/issues/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/issues)\n[![GitHub stars](https://img.shields.io/github/stars/dethertech/dether.map.svg)](https://github.com/dethertech/dether.map/stargazers)\n\n\nDetherMapBox is Javascript implementation based on [DetherJS](https://github.com/dethertech/dether.js)\n\nIt enables to load all the dether tellers and show them on a Mapbox map\n\nYou can personalise the style on the map by modifying the style of ``REACT_APP_MAPBOX_DESIGN`` in the .env variable.\n\n## Table of Contents.\n\n* [Requirement](#requirement)\n* [Install](#install)\n* [Docs](#doc)\n* [Usage](#Usage)\n* [Test](#test)\n* [Build](#build)\n* [Build doc](#build-doc)\n* [Dependencies](#dependencies)\n* [Bugs](#bugs)\n* [Donation](#donation)\n\n## Requirement\n\nYou need a Mapbox API key, you will have to paste it on .env\n```\nREACT_APP_MAPBOX_TOKEN=\nREACT_APP_MAPBOX_DESIGN=mapbox://styles/mapbox/light-v9\nREACT_APP_NETWORK=kovan\n\n```\n\n## Install\n\n```\ngit clone https://github.com/dethertech/dether.map.git\ncd dether.map\nyarn\n```\n\n## Docs\n\nExtensive documentation of all the methods can be found on the [API documentation](https://dethertech.github.io/dether.map)\n\n## Usage\n\n```\nyarn start\n```\n\n## Test\n```\nyarn test\n```\n\n## Build\n```\nyarn build\n```\n\n## Build doc\n```\nyarn run esdoc\nyarn run publish:esdoc\n```\n\n## Dependencies\n\n* [dethercontract](https://github.com/dethertech/dethercontracts.git)\n* [detherjs](https://github.com/dethertech/dether.js)\n* [mapbox-gl](https://github.com/mapbox/mapbox-gl-js)\n* [prop-types](https://github.com/facebook/prop-types)\n* [react](https://github.com/facebook/react)\n* [react-dom](https://github.com/facebook/react)\n* [react-redux](https://github.com/reactjs/react-redux)\n* [react-router-dom](https://github.com/ReactTraining/react-router)\n* [react-scripts](https://github.com/facebookincubator/create-react-app)\n* [redux](https://github.com/reactjs/redux)\n* [redux-thunk](https://github.com/gaearon/redux-thunk)\n\n## Bugs\n\nWhen you find issues, please report them:\n\n* web: [https://github.com/dethertech/dether.map/issues](https://github.com/dethertech/dether.map/issues)\n\n\n## Donation\n* [Ethereum Foundation](https://ethereum.org/donate)\n* [Etherscan](https://etherscan.io/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f)\n* [MyEtherWallet](https://etherscan.io/address/0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8)\n* [CoinMarketCap](https://etherscan.io/address/0x0074709077B8AE5a245E4ED161C971Dc4c3C8E2B)\n",
+    "longname": "/Users/ishak/Documents/dether.mapbox/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"dether.map\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"detherjs\": \"^0.2.0\",\n    \"mapbox-gl\": \"^0.38.0\",\n    \"prop-types\": \"^15.6.0\",\n    \"react\": \"^16.1.1\",\n    \"react-dom\": \"^16.1.1\",\n    \"react-redux\": \"^5.0.6\",\n    \"react-router-dom\": \"^4.2.2\",\n    \"react-scripts\": \"1.0.17\",\n    \"redux\": \"^3.7.2\",\n    \"redux-thunk\": \"^2.2.0\"\n  },\n  \"scripts\": {\n    \"build-css\": \"node-sass-chokidar src/ -o src/\",\n    \"watch-css\": \"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive\",\n    \"start-js\": \"react-scripts start\",\n    \"start\": \"npm-run-all -p watch-css start-js\",\n    \"build-js\": \"react-scripts build\",\n    \"build\": \"npm-run-all build-css build-js\",\n    \"test\": \"react-scripts test --env=jsdom\",\n    \"eject\": \"react-scripts eject\",\n    \"esdoc\": \"./node_modules/.bin/esdoc\",\n    \"publish:esdoc\": \"gh-pages -d esdoc\"\n  },\n  \"devDependencies\": {\n    \"babel-eslint\": \"^7.2.3\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.11.0\",\n    \"eslint-config-airbnb\": \"^16.1.0\",\n    \"eslint-plugin-flowtype\": \"^2.39.1\",\n    \"eslint-plugin-import\": \"^2.8.0\",\n    \"eslint-plugin-jsx-a11y\": \"^5.1.1\",\n    \"eslint-plugin-react\": \"^7.4.0\",\n    \"gh-pages\": \"^1.0.0\",\n    \"node-sass-chokidar\": \"0.0.3\",\n    \"npm-run-all\": \"^4.1.2\"\n  }\n}\n",
-    "longname": "/Users/ishak/Documents/dether.map/package.json",
+    "content": "{\n  \"name\": \"dether.map\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"detherjs\": \"^0.2.1\",\n    \"mapbox-gl\": \"^0.38.0\",\n    \"prop-types\": \"^15.6.0\",\n    \"react\": \"^16.1.1\",\n    \"react-dom\": \"^16.1.1\",\n    \"react-redux\": \"^5.0.6\",\n    \"react-router-dom\": \"^4.2.2\",\n    \"react-scripts\": \"1.0.17\",\n    \"redux\": \"^3.7.2\",\n    \"redux-thunk\": \"^2.2.0\"\n  },\n  \"scripts\": {\n    \"build-css\": \"node-sass-chokidar src/ -o src/\",\n    \"watch-css\": \"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive\",\n    \"start-js\": \"react-scripts start\",\n    \"start\": \"npm-run-all -p watch-css start-js\",\n    \"build-js\": \"react-scripts build\",\n    \"build\": \"npm-run-all build-css build-js\",\n    \"test\": \"react-scripts test --env=jsdom\",\n    \"eject\": \"react-scripts eject\",\n    \"esdoc\": \"./node_modules/.bin/esdoc\",\n    \"publish:esdoc\": \"gh-pages -d esdoc\"\n  },\n  \"devDependencies\": {\n    \"babel-eslint\": \"^7.2.3\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.11.0\",\n    \"eslint-config-airbnb\": \"^16.1.0\",\n    \"eslint-plugin-flowtype\": \"^2.39.1\",\n    \"eslint-plugin-import\": \"^2.8.0\",\n    \"eslint-plugin-jsx-a11y\": \"^5.1.1\",\n    \"eslint-plugin-react\": \"^7.4.0\",\n    \"gh-pages\": \"^1.0.0\",\n    \"node-sass-chokidar\": \"0.0.3\",\n    \"npm-run-all\": \"^4.1.2\"\n  }\n}\n",
+    "longname": "/Users/ishak/Documents/dether.mapbox/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
